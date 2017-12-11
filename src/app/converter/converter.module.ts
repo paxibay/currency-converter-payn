@@ -4,9 +4,10 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 //import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-//import { NglModule } from 'ng-lightning/ng-lightning';
+import { NglModule } from 'ng-lightning/ng-lightning';
 
 import { ConverterComponent } from './components/converter.component';
+import { ConverterCurrencyComponent } from './components/converter-currency.component';
 
 export const IMPORTS_MODULES = [
   BrowserModule,
@@ -14,11 +15,12 @@ export const IMPORTS_MODULES = [
   FormsModule,
   ReactiveFormsModule,
   HttpModule,
-  //NglModule
+  NglModule
 ];
 
 const COMPONENTS = [
   ConverterComponent,
+  ConverterCurrencyComponent
 ];
 
 @NgModule({

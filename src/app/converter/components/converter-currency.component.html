@@ -1,0 +1,16 @@
+<div class="slds-grid">
+  <div class="slds-col">
+    <ngl-form-element label="{{titleLabel}}" [error]="hasError ? error : null" class="slds-m-top--small">
+      <input nglFormControl type="number" placeholder="0.00" [required]="required">
+    </ngl-form-element>
+  </div>
+  <div class="slds-col">
+    <ngl-form-element label="" [error]="hasError ? error : null" class="slds-m-top--small">
+      <select nglFormControl class="slds-select" [required]="required">
+        <option>CAD</option>
+        <option>USD</option>
+        <option>EUR</option>
+      </select>
+    </ngl-form-element>
+  </div>
+</div>
